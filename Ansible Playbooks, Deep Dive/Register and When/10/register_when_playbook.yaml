@@ -13,5 +13,5 @@
       yum:
         name: patch
         state: present
-      when: command_register is changed
+      when: command_register is changed # "when: command_register.changed" ile aynı anlama gelir.
 ...
