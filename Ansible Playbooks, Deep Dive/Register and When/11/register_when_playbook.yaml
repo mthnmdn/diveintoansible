@@ -13,11 +13,11 @@
       yum:
         name: patch
         state: present
-      when: command_register is changed
+      when: command_register is changed # "command_register" değişkeninde "changed" değeri true ise "patch" binary'si yüklenir.
 
     - name: Install patch when skipped
       apt:
         name: patch
         state: present
-      when: command_register is skipped
+      when: command_register is skipped # "command_register" değişkeninde "skipped" değeri true ise "patch" binary'si yüklenir.
 ...
