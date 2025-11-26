@@ -1,3 +1,5 @@
+# "Exploring register" task'ının çıktısı "command_register" değişkenine atanır ve "Install patch when changed" task'ı ile "command_register.changed" değişkeni "true" olan sunucularda patch komutu yum ile yüklenir.
+# Playbook çıktısındaki "changed" ifadesi playbook'un ilgili sunucuda çalıştığını gösterir. Yani ilk task'ın çalıştığı sunucuların tamamında patch komutu kurulur.
 ---
 -
   hosts: linux
