@@ -1,14 +1,9 @@
+
+# "item" değişkeni "with_items" ile tanımlanan listedeki tüm değerleri tek tek alır. Task "item" değişkeninin alacağı her değer için bir kez çalışır. 
+# Bu örnekte task hedef sunucuların her birinde "james, hayley, lily, anwen" değerleri için toplam 4 kez çalışır. 
 ---
-# YAML documents begin with the document separator ---
- 
-# The minus in YAML this indicates a list item.  The playbook contains a list
-# of plays, with each play being a dictionary
 -
- 
-  # Hosts: where our play will run and options it will run with
   hosts: linux
- 
-  # Tasks: the list of tasks that will be executed within the playbook
   tasks:
     - name: Creating user
       user:
@@ -18,6 +13,4 @@
         - hayley
         - lily
         - anwen
- 
-# Three dots indicate the end of a YAML document
 ...
